@@ -15,6 +15,7 @@
 		51B70AED1EB0A648005B5E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B70AEB1EB0A648005B5E64 /* LaunchScreen.storyboard */; };
 		51B70AF81EB0A648005B5E64 /* SampleCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B70AF71EB0A648005B5E64 /* SampleCollectionViewTests.swift */; };
 		51B70B031EB0A648005B5E64 /* SampleCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B70B021EB0A648005B5E64 /* SampleCollectionViewUITests.swift */; };
+		51B70B111EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B70B101EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		51B70AFE1EB0A648005B5E64 /* SampleCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B70B021EB0A648005B5E64 /* SampleCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewUITests.swift; sourceTree = "<group>"; };
 		51B70B041EB0A648005B5E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B70B101EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				51B70ADF1EB0A648005B5E64 /* AppDelegate.swift */,
 				51B70AE11EB0A648005B5E64 /* ViewController.swift */,
+				51B70B101EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift */,
 				51B70AE31EB0A648005B5E64 /* Main.storyboard */,
 				51B70AE91EB0A648005B5E64 /* Assets.xcassets */,
 				51B70AEB1EB0A648005B5E64 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				51B70AE21EB0A648005B5E64 /* ViewController.swift in Sources */,
 				51B70AE01EB0A648005B5E64 /* AppDelegate.swift in Sources */,
+				51B70B111EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift in Sources */,
 				51B70AE81EB0A648005B5E64 /* SampleCollectionView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

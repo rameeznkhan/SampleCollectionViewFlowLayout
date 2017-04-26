@@ -8,18 +8,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate{
 
+  @IBOutlet weak var sampleCollectionView: UICollectionView!
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    sampleCollectionView.dataSource = self
+    sampleCollectionView.delegate = self
+    sampleCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+    NotificationCenter.default.addObserver(self, selector: #selector(orientationChanged(notification:)), name: Notification.Name.UIDeviceOrientationDidChange, object: nil)
+
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
+  func orientationChanged(notification: Notification) {
+    sampleCollectionView.collectionViewLayout.invalidateLayout()
+  }
 
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 10
+  }
+  
+  // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+  @available(iOS 6.0, *)
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+    collectionViewCell.backgroundColor = .red
+    return collectionViewCell
+  }
 
 }
 
