@@ -22,6 +22,10 @@ class SampleCollectionViewFlowLayout: UICollectionViewFlowLayout {
   override var itemSize: CGSize {
     set {}
     get {
+      if UIApplication.shared.statusBarOrientation.isPortrait {
+        let itemWidth = ((self.collectionView?.bounds.width)! / 2.0) - self.minimumLineSpacing - minimumInteritemSpacing
+        return CGSize(width: itemWidth, height: itemWidth)
+      }
       let itemWidth = ((self.collectionView?.bounds.width)! / 3.0) - self.minimumLineSpacing - minimumInteritemSpacing
       return CGSize(width: itemWidth, height: itemWidth)
     }

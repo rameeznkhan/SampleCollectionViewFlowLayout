@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		515018621ED43D6D00827F86 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515018601ED43D6D00827F86 /* ImageCollectionViewCell.swift */; };
+		515018631ED43D6D00827F86 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 515018611ED43D6D00827F86 /* ImageCollectionViewCell.xib */; };
 		51B70AE01EB0A648005B5E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B70ADF1EB0A648005B5E64 /* AppDelegate.swift */; };
 		51B70AE21EB0A648005B5E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B70AE11EB0A648005B5E64 /* ViewController.swift */; };
 		51B70AE51EB0A648005B5E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B70AE31EB0A648005B5E64 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		515018601ED43D6D00827F86 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		515018611ED43D6D00827F86 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		51B70ADC1EB0A648005B5E64 /* SampleCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B70ADF1EB0A648005B5E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B70AE11EB0A648005B5E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				51B70ADF1EB0A648005B5E64 /* AppDelegate.swift */,
 				51B70AE11EB0A648005B5E64 /* ViewController.swift */,
 				51B70B101EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift */,
+				515018601ED43D6D00827F86 /* ImageCollectionViewCell.swift */,
+				515018611ED43D6D00827F86 /* ImageCollectionViewCell.xib */,
 				51B70AE31EB0A648005B5E64 /* Main.storyboard */,
 				51B70AE91EB0A648005B5E64 /* Assets.xcassets */,
 				51B70AEB1EB0A648005B5E64 /* LaunchScreen.storyboard */,
@@ -243,6 +249,7 @@
 			files = (
 				51B70AED1EB0A648005B5E64 /* LaunchScreen.storyboard in Resources */,
 				51B70AEA1EB0A648005B5E64 /* Assets.xcassets in Resources */,
+				515018631ED43D6D00827F86 /* ImageCollectionViewCell.xib in Resources */,
 				51B70AE51EB0A648005B5E64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51B70AE21EB0A648005B5E64 /* ViewController.swift in Sources */,
+				515018621ED43D6D00827F86 /* ImageCollectionViewCell.swift in Sources */,
 				51B70AE01EB0A648005B5E64 /* AppDelegate.swift in Sources */,
 				51B70B111EB0A797005B5E64 /* SampleCollectionViewFlowLayout.swift in Sources */,
 				51B70AE81EB0A648005B5E64 /* SampleCollectionView.xcdatamodeld in Sources */,
@@ -524,6 +532,7 @@
 				51B70B091EB0A648005B5E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51B70B0A1EB0A648005B5E64 /* Build configuration list for PBXNativeTarget "SampleCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +541,7 @@
 				51B70B0C1EB0A648005B5E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51B70B0D1EB0A648005B5E64 /* Build configuration list for PBXNativeTarget "SampleCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +550,7 @@
 				51B70B0F1EB0A648005B5E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

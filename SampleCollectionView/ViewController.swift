@@ -16,7 +16,7 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
     // Do any additional setup after loading the view, typically from a nib.
     sampleCollectionView.dataSource = self
     sampleCollectionView.delegate = self
-    sampleCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+    sampleCollectionView.register(UINib.init(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
     NotificationCenter.default.addObserver(self, selector: #selector(orientationChanged(notification:)), name: Notification.Name.UIDeviceOrientationDidChange, object: nil)
 
   }
@@ -37,9 +37,12 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
   // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
   @available(iOS 6.0, *)
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-    collectionViewCell.backgroundColor = .red
-    return collectionViewCell
+    let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? ImageCollectionViewCell
+    collectionViewCell?.hund.text = "blah"
+    collectionViewCell?.cellImageview.backgroundColor = .green
+    //Set image here
+    //collectionViewCell?.cellImageView.image =
+    return collectionViewCell!
   }
 
 }
